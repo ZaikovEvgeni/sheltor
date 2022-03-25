@@ -1,0 +1,955 @@
+@import url('../../assets/normalize/mynormalize')
+@import url('../../styles/swiper')
+@import url('../../styles/fonts')
+
+// variables 
+$color-white: #fff
+$color-dark-1: #545454
+$color-orange-primary: #F1CDB3
+$padding-top-sections: 80px
+$padding-bottom-sections: 100px
+
+// наследование
+%btn-slider-style
+  position: absolute
+  top: 39%
+  width: 52px
+  height: 52px
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  background-position: center center
+  cursor: pointer
+  font-size: 90px
+  z-index: 10
+
+// ===== повторяющиеся элементы вынес в отдельные классы, заголовки одинаковые, кнопки и тд === // 
+// button-content
+.button-content
+  font-family: "Georgia-regular", sans-serif
+  font-size: 17px
+  line-height: 22px
+  letter-spacing: 1px
+  color: #292929
+  cursor: pointer
+  background: $color-orange-primary
+  border-radius: 100px
+  padding: 15px 45px
+  transition: background .4s
+
+  &:hover
+    background: #FDDCC4
+
+// content-title
+.content-title
+  font-family: "Georgia-regular", sans-serif
+  font-size: 35px
+  font-weight: 400
+  line-height: 45.5px
+  letter-spacing: 2px
+  color: $color-dark-1
+
+html
+  scroll-behavior: smooth
+
+body
+  font-family: "Arial-regular", sans-serif
+  font-size: 15px
+  line-height: 24px
+  color: $color-dark-1
+
+.container
+  width: 1280px
+  max-width: 100%
+  padding: 0 40px
+  margin: 0 auto
+
+// section main
+.main
+  position: relative
+  padding-top: 60px
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+  overflow: hidden
+
+.header
+  // position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  &__logo
+    z-index: 2
+  &__title
+    font-family: "Georgia-regular"
+    font-size: 32px
+    line-height: 35px
+    letter-spacing: 2px
+    color: $color-orange-primary
+    font-weight: 400
+    margin-bottom: 7px
+
+  &__text
+    font-size: 13px
+    line-height: 15px
+    letter-spacing: 1.5px
+    color: $color-white
+
+// menu
+.menu
+
+  &__items
+    display: flex
+
+  &__item
+    margin-left: 35px
+
+  &__item-link
+    font-family: "Arial-regular", sans-serif
+    font-weight: 400
+    font-size: 15px
+    line-height: 24px
+    color: #CDCDCD
+    transition: all .4s
+
+  &__item-link:hover
+    color: #FAFAFA
+
+// not-only
+.not-only
+  padding-top: 60px
+  display: flex
+  justify-content: space-between
+
+  &__content
+    width: 39%
+    padding-top: 163px
+    padding-bottom: 243px
+    align-items: center
+
+  &__title
+    font-family: "Georgia-regular", sans-serif
+    max-width: 310px
+    font-size: 44px
+    line-height: 57px
+    color: $color-white
+    font-weight: 400
+    margin-bottom: 42px
+
+  &__text
+    margin-bottom: 42px
+    color: #CDCDCD
+    line-height: 160%
+
+  &__background
+    width: 58%
+    height: auto
+    background-image: url('../../assets/images/not-only/puppy.png')
+    background-repeat: no-repeat
+    background-position: center bottom
+    background-size: contain
+
+// about
+.about
+  padding-top: $padding-top-sections
+  padding-bottom: $padding-bottom-sections
+
+  &__inner
+    display: flex
+    justify-content: center
+
+  &__background-img
+    width: 25%
+    background-image: url('../../assets/images/about/about-pets.png')
+    background-position: center center
+    background-size: contain
+    background-repeat: no-repeat
+    margin-right: 120px
+
+  &__content
+    width: 36%
+    padding: 14px 0 14px 0
+
+  &__text
+    margin-top: 25px
+    color: #4c4c4c
+
+// ========================= friends =====================
+.friends-slider.swiper
+  position: static
+.friends
+  padding-top: $padding-top-sections
+  padding-bottom: $padding-bottom-sections
+  background: #F6F6F6
+
+  &-container-slider
+    position: relative
+    padding-bottom: 60px
+
+  &-slider
+    max-width: 82%
+    position: static
+
+  &-slide
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    transition: transform .4s
+  &-slide:hover
+    transform: scale(1.1)
+
+  &-slide__img
+    max-width: 270px
+
+  &-slide__name
+    font-family: "Georgia-regular", sans-serif
+    font-size: 20px
+    line-height: 22.72px
+    letter-spacing: 2px
+    align-items: center
+    color: #545454
+    margin: 30px 0 30px 0
+
+  &__title
+    margin: 0 auto
+    text-align: center
+    margin-bottom: 60px
+
+  &-slide__button
+    font-family: "Georgia-regular", sans-serif
+    font-size: 17px
+    line-height: 22px
+    letter-spacing: 1px
+    color: #292929
+    cursor: pointer
+    border-radius: 100px
+    border: 1px solid $color-orange-primary
+    padding: 15px 45px
+    transition: background .4s
+    margin-bottom: 30px
+
+  &-slide__button:hover
+    background: $color-orange-primary
+
+  &-slider__btn-prev::after
+    display: none
+  &-slider__btn-next::after
+    display: none
+
+  &-slider__btn-prev
+    @extend %btn-slider-style
+    transition: transform .3s
+    left: 0
+    background-image: url('../../assets/images/friends/button_left.png')
+
+  &-slider__btn-next
+    @extend %btn-slider-style
+    transition: transform .3s
+    right: 0
+    background-image: url('../../assets/images/friends/button_right.png')
+
+  &-slider__btn-prev:hover
+    transform: scale(1.2)
+  &-slider__btn-next:hover
+    transform: scale(1.2)
+
+  &__button
+    display: block
+    margin: 0 auto
+
+.help
+  padding-top: $padding-top-sections
+  padding-bottom: $padding-bottom-sections
+
+  &__title
+    text-align: center
+    margin-bottom: 56px
+
+  &__inner
+    display: flex
+    // justify-content: space-around
+    width: 100%
+    flex-wrap: wrap
+    row-gap: 50px
+    // column-gap: 120px
+
+  &-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-end
+    // width: 20%
+    height: auto
+    line-height: 0
+
+  &-item__img
+    margin-bottom: 30px
+    // height: 60px
+
+  &-item__text
+    font-family: "Georgia-regular", sans-serif
+    font-size: 20px
+    line-height: 23px
+    letter-spacing: 1px
+    text-align: center
+    color: $color-dark-1
+
+.help-item
+  margin-right: 120px
+
+.help-item:nth-child(1)
+  margin-left: 87px
+.help-item:nth-child(5)
+  margin-right: 73px
+.help-item:nth-child(6)
+  margin-left: 171px
+.help-item:nth-child(9)
+  margin-right: 150px
+
+// ===== section donation =======
+.donation
+  padding-top: $padding-top-sections
+  padding-bottom: $padding-bottom-sections
+  background: #f6f6f6
+  &__inner
+    display: flex
+    justify-content: center
+    column-gap: 30px
+
+  &-background__img
+    width: 42%
+    background-image: url('../../assets/images/donation/dog.png')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center center
+    margin-top: 11px
+
+  &__content
+    // width: 31%  
+  &__title
+    margin-bottom: 20px
+  &__name-bank
+    font-family: "Georgia-regular", sans-serif
+    font-size: 15px
+    line-height: 24px
+    font-weight: 400
+    letter-spacing: 1px
+    color: $color-dark-1
+    margin-bottom: 20px
+
+  &__link
+    display: inline-block
+    position: relative
+    padding: 10px 15px 10px 60px
+    border-radius: 9px
+    background: $color-orange-primary
+    font-family: "Georgia-regular", sans-serif
+    font-weight: 400
+    font-size: 20px
+    line-height: 23px
+    letter-spacing: 1px
+    color: $color-dark-1
+    margin-bottom: 20px
+    transition: transform .3s
+  &__link::after
+    display: block
+    content: ""
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 15px
+    width: 30px
+    height: 23px
+    background: url('../../assets/images/donation/credit-card.svg') no-repeat 100% 100%
+  &__link:hover
+    transform: scale(1.1)
+
+  &__text
+    max-width: 380px
+    font-weight: 400
+    font-style: italic
+    font-size: 12px
+    line-height: 18px
+    color: #b2b2b2
+
+// =========== footer ================= 
+.footer
+  position: relative
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+  padding-top: 56px
+  padding-bottom: 64px
+
+  &__inner
+    position: relative
+    display: flex
+    // justify-content: space-between
+
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 300px
+    height: 225px
+
+  &__item + &__item
+    margin-left: 131px
+
+  &__title
+    color: $color-white
+
+  &__link
+    position: relative
+    display: inline-block
+    font-family: "Georgia-regular", sans-serif
+    font-size: 20px
+    line-height: 23px
+    letter-spacing: 1px
+    color: $color-orange-primary
+    font-weight: 400
+    padding-left: 60px
+
+  &__link_boston
+    padding-left: 42px
+  &__link_london
+    padding-left: 42px
+
+  &__link::after
+    display: block
+    content: ""
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 0
+    width: 40px
+    height: 32px
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: 100% 100%
+
+  &__link_mail::after
+    background-image: url('../../assets/images/footer/mail.svg')
+  &__link_tel::after
+    background-image: url('../../assets/images/footer/phone.svg')
+  &__link_boston::after
+    background-image: url('../../assets/images/footer/pin.svg')
+    left: -8px
+  &__link_london::after
+    background-image: url('../../assets/images/footer/pin.svg')
+    left: -8px
+
+  &-background-img
+    position: absolute
+    right: 12px
+    bottom: -64px
+    min-height: 310px
+    width: 25%
+    background-image: url('../../assets/images/footer/footer-puppy.png')
+    background-position: center bottom
+    background-repeat: no-repeat
+    background-size: contain
+
+// ======= pop-up ===============
+.animal-card.active
+  transform: translateX(0) scale(1)
+.animal-card
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background: rgba(41, 41, 41, 0.6)
+  z-index: 2
+  transform: translateX(-90%) scale(0)
+  transition: transform .4s
+
+  &__container
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100%
+
+  &__form
+    position: relative
+    font-family: "Georgia-regular", sans-serif
+    color: #000000
+    display: flex
+    justify-content: space-between
+    width: 80%
+    max-width: 900px
+    height: auto
+    background: #FAFAFA
+    border-radius: 9px 0px 0px 9px
+
+  &__img
+    line-height: 0
+    width: 55%
+    img
+      width: 100%
+
+  &__info
+    width: 39%
+    margin-right: 20px
+    // padding-bottom: 89px
+
+  &__name
+    padding-top: 50px
+    margin-bottom: 10px
+
+  &__type
+    font-weight: 400
+    font-size: 20px
+    line-height: 23px
+    letter-spacing: 1px
+
+  &__text
+    margin-top: 40px
+    margin-bottom: 45px
+    font-size: 15px
+    line-height: 16.5px
+    letter-spacing: 0.9px
+
+  &__subtext
+    position: relative
+    font-weight: 700
+    font-size: 15px
+    line-height: 16.5px
+    letter-spacing: 2px
+    margin-bottom: 11px
+    padding-left: 14px
+    &::after
+      display: block
+      content: ""
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 4px
+      height: 4px
+      background: $color-orange-primary
+      border-radius: 50%
+    span
+      font-weight: 400
+      letter-spacing: 1.2px
+
+  &__btn-close
+    @extend %btn-slider-style
+    top: -52px
+    right: -46px
+    background-image: url('../../assets/images/pop-up/close.svg')
+    transition: transform .4s
+  &__btn-close:hover
+    transform: scale(1.1)
+
+// ========================================== media ================================================
+@media screen and ( max-width: 1275px )
+
+  .help
+    &__inner
+      justify-content: space-around
+
+    &-item
+      width: 20%
+
+  .help-item
+    margin-right: 0
+
+  .help-item:nth-child(1)
+    margin-left: 0
+  .help-item:nth-child(5)
+    margin-right: 0
+  .help-item:nth-child(6)
+    margin-left: 0
+  .help-item:nth-child(9)
+    margin-right: 0
+
+@media screen and ( max-width: 1100px )
+  .footer
+    &__item + &__item
+      margin-left: 60px
+
+@media screen and ( max-width: 1000px  )
+  .not-only__content
+    padding-top: 75px
+    padding-bottom: 165px
+
+  .about
+
+    &__background-img
+      width: 35%
+
+  .footer
+    padding-bottom: 0
+
+    &__inner
+      justify-content: space-between
+      flex-wrap: wrap
+      row-gap: 69px
+
+    &__item
+      width: 40%
+
+    &__item + &__item
+      margin-left: 0
+    &-background-img
+      margin: 0 auto
+      position: relative
+      right: 0
+      bottom: 0
+      min-width: 300px
+      margin-top: 10px
+
+@media screen and ( max-width: 900px  )
+  .help
+
+    &-item
+      width: 25%
+
+  .footer
+    &__item
+      width: 46%
+
+@media screen and ( max-width: 768px )
+
+  .container
+    padding: 0 30px
+
+  .main
+    padding-top: 30px
+
+  .not-only
+    flex-direction: column
+    align-items: center
+    padding-top: 65px
+
+    &__content
+      width: 65%
+      padding-bottom: 100px
+      padding-top: 0
+
+    &__background
+      width: 80%
+      height: 593px
+      background-position: top center
+      background-size: 100% 100%
+      margin-left: 150px
+
+    &__button
+      margin: 0 auto
+      display: block
+
+  .about
+
+    &__inner
+      flex-direction: column-reverse
+      align-items: center
+
+    &__content
+      width: 61%
+      padding: 0
+
+    &__background-img
+      width: 43%
+      margin-top: 75px
+      margin-right: 10px
+      height: 408px
+
+  .friends
+
+    &-slider
+      max-width: 82%
+
+  .help
+
+    &__inner
+      row-gap: 60px
+
+    &-item
+      display: block
+      width: 33.3333%
+
+    &-item__img
+
+      img
+        display: block
+        margin: 0 auto
+    &__title
+      margin-bottom: 60px
+
+  .donation
+    &__inner
+      flex-direction: column-reverse
+      align-items: center
+
+    &__content
+      margin-bottom: 50px
+
+    &-background__img
+      width: 71.7%
+      height: 261px
+
+  .footer
+    &__item
+      width: 44%
+
+    &__inner
+      justify-content: space-around
+    &__item + &__item
+      margin-right: 18px
+
+@media screen and ( max-width: 740px )
+  .burger-menu
+    display: block
+    width: 30px
+    height: 24px
+    position: relative
+    z-index: 10
+    &__btn.active
+      transform: rotate(90deg)
+    &__btn
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 2px
+      background-color: $color-orange-primary
+      transition: transform .4s
+      &::after,
+      &::before
+        display: block
+        content: ""
+        position: absolute
+        width: 30px
+        height: 2px
+        background: $color-orange-primary
+        transition: transform .4s
+      &::after
+        top: 10px
+      &::before
+        bottom: 10px
+
+  .menu.active
+    transform: translateX(0)
+  .menu
+    display: block
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    transition: transform .8s
+    background: #292929
+    transform: translateX(100%)
+
+    &__items
+      flex-direction: column
+      align-items: center
+      margin-top: 248px
+      z-index: 1
+
+    &__item
+      margin-bottom: 40px
+      margin-left: 0
+
+    &__item-link
+      font-size: 32px
+      line-height: 51px
+
+@media screen and ( max-width: 640px )
+  $padding-top-sections: 42px
+  $padding-bottom-sections: 42px
+
+  .not-only
+    padding-top: 60px
+    &__content
+      width: 90%
+      text-align: center
+    &__title
+      margin: 0 auto
+      margin-bottom: 42px
+    &__background
+      display: block
+      height: auto
+      min-height: 400px
+      background-position: center bottom
+      background-size: contain
+      width: 100%
+      margin-left: 50px
+
+  .about
+    padding-top: $padding-top-sections
+    padding-bottom: $padding-bottom-sections
+    &__content
+      width: 100%
+    &__title
+      text-align: center
+    &__background-img
+      width: 97%
+      margin-top: 42px
+      margin-right: 0
+      height: 353px
+
+  .friends
+    padding-top: $padding-top-sections
+    padding-bottom: $padding-bottom-sections
+    &-container-slider
+      padding-bottom: 42px
+
+  .help
+    padding-top: $padding-top-sections
+    padding-bottom: $padding-bottom-sections
+
+  .donation
+    padding-top: $padding-top-sections
+    padding-bottom: $padding-bottom-sections
+    &__content
+      width: 100%
+      margin-bottom: 42px
+    &-background__img
+      margin-top: 0
+      width: 100%
+    &__title
+      text-align: center
+    &__name-bank
+      text-align: center
+    &__link
+      width: 100%
+    &__text
+      max-width: 100%
+
+  .footer
+    padding-top: 29px
+    &__inner
+      flex-direction: column
+      align-items: center
+      row-gap: 50px
+    &__item
+      width: 73%
+    &__title
+      text-align: center
+    &-background-img
+      min-height: 240px
+
+@media screen and ( max-width: 420px )
+  .container
+    padding: 0 10px
+
+  .header
+    &__title
+      margin-bottom: 10px
+    &__text
+      margin-left: 4px
+
+  .content-title
+    font-size: 25px
+    line-height: 32px
+    letter-spacing: 1.7px
+
+  .not-only
+    &__content
+      width: 100%
+    &__title
+      max-width: 220px
+      font-size: 25px
+      line-height: 32px
+      letter-spacing: 1.8px
+    &__background
+      min-height: 271px
+      margin-left: 50px
+      width: 87%
+
+  .about
+    &__inner
+      padding: 0 15px
+    &__text
+      text-align: justify
+
+  .friends
+    &__title
+      margin-bottom: 42px
+
+    &-container-slider
+      padding-bottom: 114px
+
+    &-slider__btn-next,
+    &-slider__btn-prev
+      top: 83%
+
+    &-slider__btn-prev
+      left: 20%
+    &-slider__btn-next
+      right: 20%
+
+    &-slide
+      img
+        margin-bottom: 5px
+
+  .help
+    &__inner
+      row-gap: 32px
+      justify-content: space-between
+    &__title
+      margin-bottom: 42px
+    &-item
+      width: 45%
+      &__img
+        margin-bottom: 20px
+        img
+          height: 50px
+
+    &-item__text
+      font-size: 15px
+      line-height: 17px
+
+  .donation
+
+    &__inner
+      padding: 0 10px
+
+    &__name-bank
+      letter-spacing: 0
+    &__link
+      width: 100%
+    &__text
+      width: 100%
+      align-items: center
+      text-align: justify
+    &__link
+      font-size: 15px
+      line-height: 16.5px
+      padding: 13px 11px 13px 60px
+      letter-spacing: 1px
+    &-background__img
+      height: 135px
+      width: 93%
+
+  .footer
+    &__inner
+      row-gap: 49px
+
+    &__item
+      width: 99%
+      height: auto
+      row-gap: 44px
+      &-goole_margin
+        row-gap: 41px
+    &__item + &__item
+      margin-right: 0
+    &__link
+      letter-spacing: 1.2px
+      &_mail
+        margin-left: 22px
+      &_tel
+        margin-top: 4px
+        margin-left: 27px
+    &-background-img
+      min-height: 269px
+      min-width: 0
+      width: 87%
+      margin: 0
+
+@media screen and ( max-width: 320px )
+  .burger-menu
+    right: 43px

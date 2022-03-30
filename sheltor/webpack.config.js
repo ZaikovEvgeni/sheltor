@@ -29,8 +29,8 @@ module.exports = {
     port: 8080,
         historyApiFallback: 
      {
-      // index: '/pages/main',
-      index: '/pages/pets'
+      index: '/pages/main',
+      // index: '/pages/pets'
      
     }
    

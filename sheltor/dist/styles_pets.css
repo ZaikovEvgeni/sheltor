@@ -119,10 +119,21 @@ main {
 }
 
 .header {
+  margin: 0 auto;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   padding: 30px 0;
+  max-width: 1200px;
+  background: #fff;
+}
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  height: 120px;
 }
 .header__logo {
   z-index: 2;
@@ -172,6 +183,7 @@ main {
   padding-top: 80px;
   padding-bottom: 100px;
   background-color: #f6f6f6;
+  margin-top: 120px;
 }
 .friends__title {
   text-align: center;
@@ -194,6 +206,9 @@ main {
 }
 .friends-card:hover {
   transform: scale(1.1);
+}
+.friends-card:hover .friends-card__button {
+  background: #F1CDB3;
 }
 .friends-card__img {
   max-width: 100%;
@@ -553,7 +568,7 @@ main {
   }
 
   .friends {
-    margin-top: 120px;
+    margin-top: 0;
     padding-top: 42px;
     padding-bottom: 42px;
   }

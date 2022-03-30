@@ -274,6 +274,9 @@ body {
 .friends-slide:hover {
   transform: scale(1.1);
 }
+.friends-slide:hover .friends-slide__button {
+  background: #F1CDB3;
+}
 .friends-slide__img {
   max-width: 270px;
 }
@@ -328,6 +331,9 @@ body {
 }
 .friends-slider__btn-next:hover {
   transform: scale(1.2);
+}
+.friends-container__button {
+  display: flex;
 }
 .friends__button {
   display: block;
@@ -628,7 +634,7 @@ body {
 .animal-card__btn-close {
   top: -52px;
   right: -46px;
-  background-image: url(f787a0e39ab69f77a256.svg);
+  background-image: url(7688d8cb8fefaeff5bfa.png);
   transition: transform 0.4s;
 }
 .animal-card__btn-close:hover {

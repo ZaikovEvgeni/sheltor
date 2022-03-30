@@ -54,24 +54,10 @@ burgerMenu.addEventListener('click', function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ================================ functions ========================================
-function addClassNameActive(element) {
+export function addClassNameActive(element) {
   element.classList.toggle('active');
 }
-
 
 
 

@@ -1,14 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <title>Pets</title>
 </head>
+
 <body>
-    <h1>hello</h1>
-    <a href="../main/index.html"> Переход на первую страницу</a>
+  <main class="main">
+    <div class="container">
+      <div class="header-wrapper">
+        <header class="header">
+          <div class="header__logo">
+            <h1 class="header__title">Cozy House</h1>
+            <p class="header__text">Shelter for pets in Boston</p>
+          </div>
+
+          <a class="burger-menu" href="#">
+            <span class="burger-menu__btn"></span>
+          </a>
+
+          <nav class="menu">
+            <ul class="menu__items">
+              <li class="menu__item">
+                <a class="menu__item-link" href="#id-main">About the shelter</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">Our pets</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#id-help">Help the shelter</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <!-- section friends -->
+    <section class="friends">
+      <div class="container">
+        <h3 class="content-title friends__title">
+          Our friends who
+          <br>
+          are looking for a house
+        </h3>
+        <div class="friends__cards">
+
+          <div class="friends-card">
+            <img class="friends-card__img" src="../../assets/images/friends/pets-katrine.png"
+              alt="very good cat Jennifer">
+            <p class="friends-card__name">Katrine</p>
+            <button type="button" class="friends-card__button">Learn more</button>
+          </div>
+
+          <div class="friends-card">
+            <img class="friends-card__img" src="../../assets/images/friends/pets-jennifer.png"
+              alt="very good cat Jennifer">
+            <p class="friends-card__name">Jennifer</p>
+            <button type="button" class="friends-card__button">Learn more</button>
+          </div>
+
+          <div class="friends-card">
+            <img class="friends-card__img" src="../../assets/images/friends/pets-woody.png"
+              alt="very good cat Jennifer">
+            <p class="friends-card__name">Woody</p>
+            <button type="button" class="friends-card__button">Learn more</button>
+          </div>
+
+          <div class="friends-card">
+            <img class="friends-card__img" src="../../assets/images/friends/sophia.png" alt="very good cat Jennifer">
+            <p class="friends-card__name">Sophia</p>
+            <button type="button" class="friends-card__button">Learn more</button>
+          </div>
+
+          <div class="friends-card">
+            <img class="friends-card__img" src="../../assets/images/friends/pets-timmy.png"
+              alt="very good cat Jennifer">
+            <p class="friends-card__name">Timmy</p>
+            <button type="button" class="friends-card__button">Learn more</button>
+          </div>
+
+          <div class="friends-card">
+            <img class="friends-card__img" src="../../assets/images/friends/pets-charly.png"
+              alt="very good cat Jennifer">
+            <p class="friends-card__name">Charly</p>
+            <button type="button" class="friends-card__button">Learn more</button>
+          </div>
+
+          <div class="friends-card">
+            <img class="friends-card__img" src="../../assets/images/friends/pets-scarlet.png"
+              alt="very good cat Jennifer">
+            <p class="friends-card__name">Scarlett</p>
+            <button type="button" class="friends-card__button">Learn more</button>
+          </div>
+
+          <div class="friends-card">
+            <img class="friends-card__img" src="../../assets/images/friends/pets-freddy.png"
+              alt="very good cat Jennifer">
+            <p class="friends-card__name">Freddie</p>
+            <button type="button" class="friends-card__button">Learn more</button>
+          </div>
+
+        </div>
+        <div class="friends-controls">
+          <button class="friends__btn friends-controls__btn-first-page"></button>
+          <button class="friends__btn friends-controls__btn-prev-page"></button>
+          <span class="friends-controls__page">1</span>
+          <button class="friends__btn friends-controls__btn-next-page"></button>
+          <button class="friends__btn friends-controls__btn-last-page"></button>
+        </div>
+      </div>
+    </section>
+
+
+    <footer id="id-footer" class="footer">
+      <div class="container">
+        <div class="footer__inner">
+
+          <div class="footer__item">
+            <h3 class="content-title footer__title"> For questions and suggestions</h3>
+            <a class="footer__link footer__link_mail" href="mailto:email@shelter.com"
+              target="blank">email@shelter.com</a>
+            <a class="footer__link footer__link_tel" href="tel:+13 674 567 75 54" target="blank">+13 674 567 75 54</a>
+          </div>
+          <!-- cделал отдельный класс т.к макет не правильно отступы сделаны -->
+          <div class="footer__item footer__item-goole_margin">
+            <h3 class="content-title footer__title">We are waiting for your visit</h3>
+            <a class="footer__link footer__link_boston" href="https://goo.gl/maps/1m4aky7NiBCco6cH7" target="blank">1
+              Central Street, Boston (entrance from the store)</a>
+            <a class="footer__link footer__link_london" href="https://goo.gl/maps/FGxqm8rLeP5qefB87" target="blank">18
+              South Park, London </a>
+          </div>
+
+
+        </div>
+        <div class="footer-background-img"></div>
+      </div>
+    </footer>
+
+
+
+<!-- pop up animal -->
+    <div class="animal-card">
+      <div class="animal-card__container">
+        <div class="animal-card__form">
+          <div class="animal-card__img">
+            <img class="animal-card__images" src="../../assets/images/friends/pets-jennifer.png" alt="animal">
+          </div>
+          <div class="animal-card__info">
+            <div class="animal-card__name content-title">Jennifer</div>
+            <span class="animal-card__type">Dog - Labrador</span>
+            <p class="animal-card__text">Jennifer is a sweet 2 months old Labrador that is patiently
+              waiting to find a new forever home. This girl really enjoys being able to go outside
+              to run and play, but won't hesitate to play up a storm in the house if she has all
+              of her favorite toys.</p>
+              <p class="animal-card__subtext">Age: <span class="animal-card__age">2 months</span> </p>
+              <p class="animal-card__subtext">Inoculations: <span class="animal-card__inoculations">none</span> </p>
+              <p class="animal-card__subtext">Diseases: <span class="animal-card__diseases">none</span> </p>
+              <p class="animal-card__subtext">Parasites: <span class="animal-card__parasites">none</span> </p>
+          </div>
+          <button class="animal-card__btn-close" type="button"></button>
+        </div>
+      </div>
+    </div>
+
+  </main>
 </body>
+
 </html>

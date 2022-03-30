@@ -197,6 +197,8 @@ body
     transition: transform .4s
   &-slide:hover
     transform: scale(1.1)
+  &-slide:hover .friends-slide__button
+    background: $color-orange-primary  
 
   &-slide__img
     max-width: 270px
@@ -253,6 +255,8 @@ body
   &-slider__btn-next:hover
     transform: scale(1.2)
 
+  &-container__button
+    display: flex
   &__button
     display: block
     margin: 0 auto
@@ -539,7 +543,7 @@ body
     @extend %btn-slider-style
     top: -52px
     right: -46px
-    background-image: url('../../assets/images/pop-up/close.svg')
+    background-image: url('../../assets/images/pop-up/close.png')
     transition: transform .4s
   &__btn-close:hover
     transform: scale(1.1)

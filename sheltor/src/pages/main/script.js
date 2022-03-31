@@ -68,8 +68,9 @@ export function addClassNameActive(element) {
 const swiper = new Swiper('.friends-slider', {
   direction: 'horizontal',
   navigation: {
-    nextEl: '.friends-slider__btn-next',
-    prevEl: '.friends-slider__btn-prev',
+    nextEl: '.friends-slider__btn-prev',
+    prevEl: '.friends-slider__btn-next',
+    
   },
 
   slidesPerView: 3,
@@ -82,12 +83,12 @@ const swiper = new Swiper('.friends-slider', {
       spaceBetween: 0,
       slidesPerView: 1
     },
-    767: {
+    768: {
       spaceBetween: 40,
       slidesPerView: 2
     },
     1280: {
-      spaceBetween: 40,
+      spaceBetween: 90,
       slidesPerView: 3
     },
     

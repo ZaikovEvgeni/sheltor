@@ -194,11 +194,11 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 30px;
+  row-gap: 35px;
   column-gap: 40px;
 }
 .friends-card {
-  width: 22.5%;
+  width: 265px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,7 +220,7 @@ main {
   letter-spacing: 1px;
   text-align: center;
   color: #545454;
-  margin: 25px 0 30px 0;
+  margin: 30px 0 30px 0;
 }
 .friends-card__button {
   font-family: "Georgia-regular", sans-serif;
@@ -306,7 +306,7 @@ main {
   height: 225px;
 }
 .footer__item + .footer__item {
-  margin-left: 131px;
+  margin-left: 161px;
 }
 .footer__title {
   color: #fff;
@@ -474,7 +474,7 @@ main {
   }
 
   .friends__cards {
-    justify-content: space-around;
+    justify-content: center;
     padding-left: 14%;
     padding-right: 14%;
   }

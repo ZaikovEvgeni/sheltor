@@ -120,7 +120,6 @@ main {
 
 .header {
   margin: 0 auto;
-  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,7 +144,7 @@ main {
   letter-spacing: 2px;
   color: #545454;
   font-weight: 400;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 .header__title.active {
   color: #F1CDB3;
@@ -303,10 +302,10 @@ main {
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
-  height: 225px;
+  height: 227px;
 }
 .footer__item + .footer__item {
-  margin-left: 161px;
+  margin-left: 140px;
 }
 .footer__title {
   color: #fff;
@@ -342,22 +341,22 @@ main {
   background-size: 100% 100%;
 }
 .footer__link_mail::after {
-  background-image: url(b00aad3a505ae29d9103.svg);
+  background-image: url(54462cb1d883dbcf83f2.svg);
 }
 .footer__link_tel::after {
-  background-image: url(b79d1c5ce3c4f2ded1ee.svg);
+  background-image: url(7ccd27521c6ac31851c3.svg);
 }
 .footer__link_boston::after {
-  background-image: url(123c22bef80634c1c988.svg);
+  background-image: url(40f188612ed0886f7707.svg);
   left: -8px;
 }
 .footer__link_london::after {
-  background-image: url(123c22bef80634c1c988.svg);
+  background-image: url(40f188612ed0886f7707.svg);
   left: -8px;
 }
 .footer-background-img {
   position: absolute;
-  right: 40px;
+  right: 31px;
   bottom: 0;
   min-height: 310px;
   width: 25%;
@@ -427,7 +426,7 @@ main {
 }
 .animal-card__text {
   margin-top: 40px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   font-size: 15px;
   line-height: 16.5px;
   letter-spacing: 0.9px;
@@ -459,8 +458,8 @@ main {
 }
 .animal-card__btn-close {
   position: absolute;
-  top: -56px;
-  right: -46px;
+  top: -54px;
+  right: -40px;
   background-image: url(7688d8cb8fefaeff5bfa.png);
   transition: transform 0.4s;
 }
@@ -473,7 +472,16 @@ main {
     padding: 0 30px;
   }
 
+  .header__text {
+    letter-spacing: 1.3px;
+  }
+
+  .menu {
+    padding-bottom: 5px;
+  }
+
   .friends__cards {
+    row-gap: 30px;
     justify-content: center;
     padding-left: 14%;
     padding-right: 14%;
@@ -486,7 +494,7 @@ main {
   }
 
   .footer__item + .footer__item {
-    margin-left: 35px;
+    margin-left: 39px;
   }
 
   .footer {
@@ -505,6 +513,9 @@ main {
     min-width: 300px;
     margin-top: 10px;
   }
+  .footer__link {
+    letter-spacing: 1.1px;
+  }
 
   .animal-card__form {
     z-index: 100;
@@ -516,7 +527,7 @@ main {
   }
   .animal-card__name {
     padding-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .animal-card__text {
     margin: 20px 0;
@@ -573,17 +584,17 @@ main {
     padding-bottom: 42px;
   }
   .friends__title {
-    margin-bottom: 48px;
+    margin-bottom: 42px;
     font-size: 34px;
     line-height: 40px;
   }
   .friends__cards {
     padding-left: 12%;
     padding-right: 12%;
-    row-gap: 40px;
+    row-gap: 30px;
   }
   .friends-card__name {
-    margin-top: 35px;
+    margin-top: 30px;
   }
   .friends-controls {
     column-gap: 10px;
@@ -608,7 +619,7 @@ main {
     width: 30px;
     height: 24px;
     position: relative;
-    margin-right: 38px;
+    margin-right: 43px;
     z-index: 10;
   }
   .burger-menu__btn.active {
@@ -711,32 +722,41 @@ main {
   .friends__title {
     font-size: 25px;
     line-height: 32.5px;
+    letter-spacing: 1.4px;
   }
   .friends-card {
     min-width: 270px;
   }
 
-  .footer__item {
-    width: 100%;
-    height: auto;
-    margin-bottom: 0;
-  }
   .footer__title {
+    margin: 0 auto;
+    max-width: 280px;
     font-size: 25px;
     line-height: 32.5px;
     text-align: center;
     margin-bottom: 45px;
+    letter-spacing: 1.4px;
+  }
+  .footer__item {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .footer__title_second {
+    margin-bottom: 40px;
   }
   .footer__link {
     margin-bottom: 45px;
     letter-spacing: 1.4px;
   }
   .footer__link_mail {
-    margin-left: 20px;
-    margin-bottom: 52px;
+    margin-left: 24px;
+    margin-bottom: 48px;
   }
   .footer__link_tel {
-    margin-left: 26px;
+    margin-left: 30px;
   }
   .footer-background-img {
     margin-top: 0;

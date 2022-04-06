@@ -85,18 +85,19 @@ body
     letter-spacing: 2px
     color: $color-orange-primary
     font-weight: 400
-    margin-bottom: 7px
+    margin-bottom: 10px
 
   &__text
     font-size: 13px
     line-height: 15px
-    letter-spacing: 1.5px
+    letter-spacing: 1.3px
     color: $color-white
     margin-left: 4px
 
 // menu
 .menu
-  margin-right: 10px
+  padding-bottom: 4px
+ 
   &__items
     display: flex
 
@@ -210,10 +211,10 @@ body
     font-family: "Georgia-regular", sans-serif
     font-size: 20px
     line-height: 22.72px
-    letter-spacing: 2px
+    letter-spacing: 1.4px
     align-items: center
     color: #545454
-    margin: 25px 0 30px 0
+    margin: 30px 0 30px 0
 
   &__title
     margin: 0 auto
@@ -277,7 +278,7 @@ body
     // justify-content: space-around
     width: 100%
     flex-wrap: wrap
-    row-gap: 50px
+    row-gap: 58px
     // column-gap: 120px
 
   &-item
@@ -297,7 +298,7 @@ body
     font-family: "Georgia-regular", sans-serif
     font-size: 20px
     line-height: 23px
-    letter-spacing: 1px
+    letter-spacing: 1.1px
     text-align: center
     color: $color-dark-1
 
@@ -311,7 +312,7 @@ body
 .help-item:nth-child(6)
   margin-left: 171px
 .help-item:nth-child(9)
-  margin-right: 150px
+  margin-right: 145px
 
 // ===== section donation =======
 .donation
@@ -354,7 +355,7 @@ body
     font-weight: 400
     font-size: 20px
     line-height: 23px
-    letter-spacing: 1px
+    letter-spacing: 1.1px
     color: $color-dark-1
     margin-bottom: 20px
     transition: transform .3s
@@ -396,10 +397,10 @@ body
     flex-direction: column
     justify-content: space-between
     width: 300px
-    height: 225px
+    height: 228px
 
   &__item + &__item
-    margin-left: 135px
+    margin-left: 138px
 
   &__title
     color: $color-white
@@ -410,15 +411,20 @@ body
     font-family: "Georgia-regular", sans-serif
     font-size: 20px
     line-height: 23px
-    letter-spacing: 1px
+    letter-spacing: 1.1px
     color: $color-orange-primary
     font-weight: 400
     padding-left: 60px
+    
 
   &__link_boston
     padding-left: 42px
   &__link_london
     padding-left: 42px
+  &__link_tel,
+  &__link_london
+    margin-top: 8px
+
 
   &__link::after
     display: block
@@ -487,6 +493,7 @@ body
     width: 80%
     max-width: 900px
     height: auto
+    // max-height: 500px
     background: #FAFAFA
     border-radius: 9px
 
@@ -504,7 +511,7 @@ body
   &__name
     color: #000000
     padding-top: 50px
-    margin-bottom: 10px
+    margin-bottom: 7px
 
   &__type
     font-weight: 400
@@ -514,7 +521,7 @@ body
 
   &__text
     margin-top: 40px
-    margin-bottom: 45px
+    margin-bottom: 43px
     font-size: 15px
     line-height: 16.5px
     letter-spacing: 0.9px
@@ -540,12 +547,12 @@ body
       border-radius: 50%
     span
       font-weight: 400
-      letter-spacing: 1.2px
+      letter-spacing: .9px
 
   &__btn-close
     @extend %btn-slider-style
-    top: -52px
-    right: -46px
+    top: -51px
+    right: -40px
     background-image: url('../../assets/images/pop-up/close.png')
     transition: transform .4s
   &__btn-close:hover
@@ -560,8 +567,14 @@ body
   .main
     padding-top: 30px
 
+  .header
+    &__title
+      margin-bottom: 10px
+
   .menu
     margin-right: 0  
+    &__item-link
+      letter-spacing: .1px
     
 
   .not-only
@@ -625,8 +638,10 @@ body
       margin-bottom: 60px
 
     &__inner
+      width: 97%
+      margin: 0 auto
       justify-content: space-around
-      row-gap: 60px
+      row-gap: 58px
 
     &-item
       display: block
@@ -689,7 +704,7 @@ body
       height: 226px  
 
   .footer__item + .footer__item
-    margin-left: 34px
+    margin-left: 38px
 
 
   .animal-card
@@ -697,12 +712,12 @@ body
       z-index: 100
       width: 82%
     &__info
-      width: 41%
+      width: 41.3%
       // padding-left: 11px
       margin-right: 9px  
     &__name
       padding-top: 10px
-      margin-bottom: 10px
+      margin-bottom: 8px
     &__text
       margin: 20px 0
       letter-spacing: 0.4px
@@ -711,6 +726,10 @@ body
       margin-bottom: 6px  
       span 
         letter-spacing: .6px
+    &__img
+      width: 56%
+      img
+        width: 99%    
                
 
 
@@ -740,7 +759,7 @@ body
  
 @media screen and ( max-width: 800px )
   .friends-slider
-    max-width: 79%      
+    max-width: 81%      
 
 
 
@@ -761,7 +780,7 @@ body
     &__title
       margin-bottom: 10px
     &__text
-      letter-spacing: 1.4px  
+      letter-spacing: 1.3px  
 
   .not-only
     padding-top: 60px
@@ -838,7 +857,7 @@ body
       z-index: 1
 
     &__item
-      margin-bottom: 40px
+      margin-bottom: 43px
       margin-left: 0
 
     &__item-link
@@ -861,7 +880,8 @@ body
       margin-right: 0
       height: 353px
     &__text
-      text-align: justify  
+      text-align: justify
+      margin-top: 22px  
 
 
   .friends
@@ -939,10 +959,10 @@ body
       display: flex
       justify-content: center  
     &__link
-      // width: 100%
+      width: auto
       font-size: 15px
       line-height: 16.5px
-      padding: 13px 11px 13px 60px
+      padding: 13px 11px 13px 57px
       letter-spacing: 1px
     &__text
       max-width: 100% 
@@ -955,10 +975,12 @@ body
 
   .footer
     padding-top: 29px
+    padding-bottom: 267px
     &__inner
       flex-direction: column
       align-items: center
       row-gap: 44px
+      margin-bottom: 45px
     &__item
       width: 73%
       row-gap: 44px
@@ -974,7 +996,7 @@ body
       &_mail
         margin-left: 22px
       &_tel
-        margin-top: 11px
+        margin-top: 5px
         margin-left: 27px  
           
     &__title
@@ -985,6 +1007,7 @@ body
       min-height: 269px
       width: 87%
       margin: 0
+      bottom: -312px
 
 
   .animal-card

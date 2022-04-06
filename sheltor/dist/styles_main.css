@@ -161,18 +161,18 @@ body {
   letter-spacing: 2px;
   color: #F1CDB3;
   font-weight: 400;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 .header__text {
   font-size: 13px;
   line-height: 15px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
   color: #fff;
   margin-left: 4px;
 }
 
 .menu {
-  margin-right: 10px;
+  padding-bottom: 4px;
 }
 .menu__items {
   display: flex;
@@ -292,10 +292,10 @@ body {
   font-family: "Georgia-regular", sans-serif;
   font-size: 20px;
   line-height: 22.72px;
-  letter-spacing: 2px;
+  letter-spacing: 1.4px;
   align-items: center;
   color: #545454;
-  margin: 25px 0 30px 0;
+  margin: 30px 0 30px 0;
 }
 .friends__title {
   margin: 0 auto;
@@ -360,7 +360,7 @@ body {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  row-gap: 50px;
+  row-gap: 58px;
 }
 .help-item {
   display: flex;
@@ -377,7 +377,7 @@ body {
   font-family: "Georgia-regular", sans-serif;
   font-size: 20px;
   line-height: 23px;
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
   text-align: center;
   color: #545454;
 }
@@ -399,7 +399,7 @@ body {
 }
 
 .help-item:nth-child(9) {
-  margin-right: 150px;
+  margin-right: 145px;
 }
 
 .donation {
@@ -442,7 +442,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
   color: #545454;
   margin-bottom: 20px;
   transition: transform 0.3s;
@@ -456,7 +456,7 @@ body {
   left: 15px;
   width: 30px;
   height: 23px;
-  background: url(b0a55b5f9acb325550a0.svg) no-repeat 100% 100%;
+  background: url(4ba0426d2bc74b7a78f3.svg) no-repeat 100% 100%;
 }
 .donation__link:hover {
   transform: scale(1.1);
@@ -485,10 +485,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
-  height: 225px;
+  height: 228px;
 }
 .footer__item + .footer__item {
-  margin-left: 135px;
+  margin-left: 138px;
 }
 .footer__title {
   color: #fff;
@@ -499,7 +499,7 @@ body {
   font-family: "Georgia-regular", sans-serif;
   font-size: 20px;
   line-height: 23px;
-  letter-spacing: 1px;
+  letter-spacing: 1.1px;
   color: #F1CDB3;
   font-weight: 400;
   padding-left: 60px;
@@ -509,6 +509,9 @@ body {
 }
 .footer__link_london {
   padding-left: 42px;
+}
+.footer__link_tel, .footer__link_london {
+  margin-top: 8px;
 }
 .footer__link::after {
   display: block;
@@ -524,17 +527,17 @@ body {
   background-size: 100% 100%;
 }
 .footer__link_mail::after {
-  background-image: url(b00aad3a505ae29d9103.svg);
+  background-image: url(54462cb1d883dbcf83f2.svg);
 }
 .footer__link_tel::after {
-  background-image: url(b79d1c5ce3c4f2ded1ee.svg);
+  background-image: url(7ccd27521c6ac31851c3.svg);
 }
 .footer__link_boston::after {
-  background-image: url(123c22bef80634c1c988.svg);
+  background-image: url(40f188612ed0886f7707.svg);
   left: -8px;
 }
 .footer__link_london::after {
-  background-image: url(123c22bef80634c1c988.svg);
+  background-image: url(40f188612ed0886f7707.svg);
   left: -8px;
 }
 .footer-background-img {
@@ -599,7 +602,7 @@ body {
 .animal-card__name {
   color: #000000;
   padding-top: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 .animal-card__type {
   font-weight: 400;
@@ -609,7 +612,7 @@ body {
 }
 .animal-card__text {
   margin-top: 40px;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
   font-size: 15px;
   line-height: 16.5px;
   letter-spacing: 0.9px;
@@ -637,11 +640,11 @@ body {
 }
 .animal-card__subtext span {
   font-weight: 400;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.9px;
 }
 .animal-card__btn-close {
-  top: -52px;
-  right: -46px;
+  top: -51px;
+  right: -40px;
   background-image: url(7688d8cb8fefaeff5bfa.png);
   transition: transform 0.4s;
 }
@@ -658,8 +661,15 @@ body {
     padding-top: 30px;
   }
 
+  .header__title {
+    margin-bottom: 10px;
+  }
+
   .menu {
     margin-right: 0;
+  }
+  .menu__item-link {
+    letter-spacing: 0.1px;
   }
 
   .not-only {
@@ -719,8 +729,10 @@ body {
     margin-bottom: 60px;
   }
   .help__inner {
+    width: 97%;
+    margin: 0 auto;
     justify-content: space-around;
-    row-gap: 60px;
+    row-gap: 58px;
   }
   .help-item {
     display: block;
@@ -788,7 +800,7 @@ body {
   }
 
   .footer__item + .footer__item {
-    margin-left: 34px;
+    margin-left: 38px;
   }
 
   .animal-card__form {
@@ -796,12 +808,12 @@ body {
     width: 82%;
   }
   .animal-card__info {
-    width: 41%;
+    width: 41.3%;
     margin-right: 9px;
   }
   .animal-card__name {
     padding-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   .animal-card__text {
     margin: 20px 0;
@@ -812,6 +824,12 @@ body {
   }
   .animal-card__subtext span {
     letter-spacing: 0.6px;
+  }
+  .animal-card__img {
+    width: 56%;
+  }
+  .animal-card__img img {
+    width: 99%;
   }
 }
 @media screen and (max-width: 1170px) {
@@ -842,7 +860,7 @@ body {
 }
 @media screen and (max-width: 800px) {
   .friends-slider {
-    max-width: 79%;
+    max-width: 81%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -860,7 +878,7 @@ body {
     margin-bottom: 10px;
   }
   .header__text {
-    letter-spacing: 1.4px;
+    letter-spacing: 1.3px;
   }
 
   .not-only {
@@ -948,7 +966,7 @@ body {
     z-index: 1;
   }
   .menu__item {
-    margin-bottom: 40px;
+    margin-bottom: 43px;
     margin-left: 0;
   }
   .menu__item-link {
@@ -977,6 +995,7 @@ body {
   }
   .about__text {
     text-align: justify;
+    margin-top: 22px;
   }
 
   .friends {
@@ -1068,9 +1087,10 @@ body {
     justify-content: center;
   }
   .donation__link {
+    width: auto;
     font-size: 15px;
     line-height: 16.5px;
-    padding: 13px 11px 13px 60px;
+    padding: 13px 11px 13px 57px;
     letter-spacing: 1px;
   }
   .donation__text {
@@ -1082,11 +1102,13 @@ body {
 
   .footer {
     padding-top: 29px;
+    padding-bottom: 267px;
   }
   .footer__inner {
     flex-direction: column;
     align-items: center;
     row-gap: 44px;
+    margin-bottom: 45px;
   }
   .footer__item {
     width: 73%;
@@ -1109,7 +1131,7 @@ body {
     margin-left: 22px;
   }
   .footer__link_tel {
-    margin-top: 11px;
+    margin-top: 5px;
     margin-left: 27px;
   }
   .footer__title {
@@ -1121,6 +1143,7 @@ body {
     min-height: 269px;
     width: 87%;
     margin: 0;
+    bottom: -312px;
   }
 
   .animal-card__form {

@@ -15,6 +15,7 @@ $padding-bottom-sections: 100px
   top: 39%
   width: 52px
   height: 52px
+  border-radius: 50%
   background-repeat: no-repeat
   background-size: 100% 100%
   background-position: center center
@@ -36,7 +37,6 @@ $padding-bottom-sections: 100px
   border-radius: 100px
   padding: 15px 45px
   transition: background .4s
-
   &:hover
     background: #FDDCC4
 
@@ -111,6 +111,10 @@ body
     line-height: 24px
     color: #CDCDCD
     transition: all .4s
+    padding-bottom: 4px
+    &.active
+      color: #fafafa
+      border-bottom: 3px solid #F1CDB3  
 
   &__item-link:hover
     color: #FAFAFA
@@ -199,8 +203,9 @@ body
     align-items: center
     transition: transform .4s
     max-width: 270px
+    cursor: pointer
   &-slide:hover
-    transform: scale(1.1)
+    // transform: scale(1.1)
   &-slide:hover .friends-slide__button
     background: $color-orange-primary  
 
@@ -244,26 +249,28 @@ body
 
   &-slider__btn-prev
     @extend %btn-slider-style
-    transition: transform .3s
+    transition: background .3s
     left: 0
     background-image: url('../../assets/images/friends/button_left.png')
 
   &-slider__btn-next
     @extend %btn-slider-style
-    transition: transform .3s
+    transition: background .3s
     right: 0
     background-image: url('../../assets/images/friends/button_right.png')
 
   &-slider__btn-prev:hover
-    transform: scale(1.2)
+    background-color: $color-orange-primary
   &-slider__btn-next:hover
-    transform: scale(1.2)
+    background-color: $color-orange-primary
 
   &-container__button
     display: flex
   &__button
     display: block
     margin: 0 auto
+
+
 
 .help
   padding-top: $padding-top-sections
@@ -308,7 +315,7 @@ body
 .help-item:nth-child(1)
   margin-left: 87px
 .help-item:nth-child(5)
-  margin-right: 73px
+  margin-right: 67px
 .help-item:nth-child(6)
   margin-left: 171px
 .help-item:nth-child(9)
@@ -358,7 +365,7 @@ body
     letter-spacing: 1.1px
     color: $color-dark-1
     margin-bottom: 20px
-    transition: transform .3s
+    transition: background .3s
   &__link::after
     display: block
     content: ""
@@ -370,7 +377,7 @@ body
     height: 23px
     background: url('../../assets/images/donation/credit-card.svg') no-repeat 100% 100%
   &__link:hover
-    transform: scale(1.1)
+    background: #fddcc4
 
   &__text
     max-width: 380px

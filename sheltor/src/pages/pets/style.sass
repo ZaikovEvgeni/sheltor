@@ -99,6 +99,9 @@ main
     line-height: 24px
     color: $color-dark-1
     transition: all .4s
+    &.active
+      padding-bottom: 4px
+      border-bottom: 3px solid $color-orange-primary
 
   &__item-link:hover
     color: #292929
@@ -127,8 +130,7 @@ main
     flex-direction: column
     align-items: center
     transition: transform .4s
-    &:hover
-      transform: scale(1.1)
+    cursor: pointer
     &:hover .friends-card__button
       background: $color-orange-primary
 
@@ -163,7 +165,6 @@ main
     border-radius: 50%
     transition: all .4s
     &:hover
-      transform: scale(1.1)
       background-color: $color-orange-primary
 
   &-controls
@@ -193,13 +194,14 @@ main
       background-image: url('../../assets/images/friends/pets-page-controls/prev-page.png')
       transform: rotate(-180deg)
       &:hover
-        transform: rotate(-180deg) scale(1.1)
+        transform: rotate(-180deg) 
+
 
     &__btn-last-page
       background-image: url('../../assets/images/friends/pets-page-controls/first-page.png')
       transform: rotate(-180deg)
       &:hover
-        transform: rotate(-180deg) scale(1.1)
+        transform: rotate(-180deg) 
 
 // =========== footer ================= 
 .footer

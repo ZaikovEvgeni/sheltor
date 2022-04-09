@@ -174,6 +174,10 @@ main {
   color: #545454;
   transition: all 0.4s;
 }
+.menu__item-link.active {
+  padding-bottom: 4px;
+  border-bottom: 3px solid #F1CDB3;
+}
 .menu__item-link:hover {
   color: #292929;
 }
@@ -202,9 +206,7 @@ main {
   flex-direction: column;
   align-items: center;
   transition: transform 0.4s;
-}
-.friends-card:hover {
-  transform: scale(1.1);
+  cursor: pointer;
 }
 .friends-card:hover .friends-card__button {
   background: #F1CDB3;
@@ -242,7 +244,6 @@ main {
   transition: all 0.4s;
 }
 .friends__btn:hover {
-  transform: scale(1.1);
   background-color: #F1CDB3;
 }
 .friends-controls {
@@ -277,14 +278,14 @@ main {
   transform: rotate(-180deg);
 }
 .friends-controls__btn-next-page:hover {
-  transform: rotate(-180deg) scale(1.1);
+  transform: rotate(-180deg);
 }
 .friends-controls__btn-last-page {
   background-image: url(66315b3acb277966a8e0.png);
   transform: rotate(-180deg);
 }
 .friends-controls__btn-last-page:hover {
-  transform: rotate(-180deg) scale(1.1);
+  transform: rotate(-180deg);
 }
 
 .footer {
@@ -341,17 +342,17 @@ main {
   background-size: 100% 100%;
 }
 .footer__link_mail::after {
-  background-image: url(54462cb1d883dbcf83f2.svg);
+  background-image: url(b00aad3a505ae29d9103.svg);
 }
 .footer__link_tel::after {
-  background-image: url(7ccd27521c6ac31851c3.svg);
+  background-image: url(b79d1c5ce3c4f2ded1ee.svg);
 }
 .footer__link_boston::after {
-  background-image: url(40f188612ed0886f7707.svg);
+  background-image: url(123c22bef80634c1c988.svg);
   left: -8px;
 }
 .footer__link_london::after {
-  background-image: url(40f188612ed0886f7707.svg);
+  background-image: url(123c22bef80634c1c988.svg);
   left: -8px;
 }
 .footer-background-img {

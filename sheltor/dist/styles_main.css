@@ -89,6 +89,7 @@ textarea {
   top: 39%;
   width: 52px;
   height: 52px;
+  border-radius: 50%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
@@ -187,6 +188,11 @@ body {
   line-height: 24px;
   color: #CDCDCD;
   transition: all 0.4s;
+  padding-bottom: 4px;
+}
+.menu__item-link.active {
+  color: #fafafa;
+  border-bottom: 3px solid #F1CDB3;
 }
 .menu__item-link:hover {
   color: #FAFAFA;
@@ -278,9 +284,7 @@ body {
   align-items: center;
   transition: transform 0.4s;
   max-width: 270px;
-}
-.friends-slide:hover {
-  transform: scale(1.1);
+  cursor: pointer;
 }
 .friends-slide:hover .friends-slide__button {
   background: #F1CDB3;
@@ -325,20 +329,20 @@ body {
   display: none;
 }
 .friends-slider__btn-prev {
-  transition: transform 0.3s;
+  transition: background 0.3s;
   left: 0;
   background-image: url(24a3a5eaf565d204f4f1.png);
 }
 .friends-slider__btn-next {
-  transition: transform 0.3s;
+  transition: background 0.3s;
   right: 0;
   background-image: url(88ca1d0e56505c73fa87.png);
 }
 .friends-slider__btn-prev:hover {
-  transform: scale(1.2);
+  background-color: #F1CDB3;
 }
 .friends-slider__btn-next:hover {
-  transform: scale(1.2);
+  background-color: #F1CDB3;
 }
 .friends-container__button {
   display: flex;
@@ -391,7 +395,7 @@ body {
 }
 
 .help-item:nth-child(5) {
-  margin-right: 73px;
+  margin-right: 67px;
 }
 
 .help-item:nth-child(6) {
@@ -445,7 +449,7 @@ body {
   letter-spacing: 1.1px;
   color: #545454;
   margin-bottom: 20px;
-  transition: transform 0.3s;
+  transition: background 0.3s;
 }
 .donation__link::after {
   display: block;
@@ -456,10 +460,10 @@ body {
   left: 15px;
   width: 30px;
   height: 23px;
-  background: url(4ba0426d2bc74b7a78f3.svg) no-repeat 100% 100%;
+  background: url(b0a55b5f9acb325550a0.svg) no-repeat 100% 100%;
 }
 .donation__link:hover {
-  transform: scale(1.1);
+  background: #fddcc4;
 }
 .donation__text {
   max-width: 380px;
@@ -527,17 +531,17 @@ body {
   background-size: 100% 100%;
 }
 .footer__link_mail::after {
-  background-image: url(54462cb1d883dbcf83f2.svg);
+  background-image: url(b00aad3a505ae29d9103.svg);
 }
 .footer__link_tel::after {
-  background-image: url(7ccd27521c6ac31851c3.svg);
+  background-image: url(b79d1c5ce3c4f2ded1ee.svg);
 }
 .footer__link_boston::after {
-  background-image: url(40f188612ed0886f7707.svg);
+  background-image: url(123c22bef80634c1c988.svg);
   left: -8px;
 }
 .footer__link_london::after {
-  background-image: url(40f188612ed0886f7707.svg);
+  background-image: url(123c22bef80634c1c988.svg);
   left: -8px;
 }
 .footer-background-img {
